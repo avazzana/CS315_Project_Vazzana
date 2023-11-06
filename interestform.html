@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lan = 'en'>
+    <head>
+        <title>SAI Interest form</title>
+        <link href="styles.css" rel="stylesheet"/>
+        <script defer src = "script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id = "formsection">Interested in joining SAI? Fill out the form below to receive emails about recruitment!</h1>
+            <form id = "interestform">
+                <fieldset>
+                  <legend>Your info</legend>
+                  <div class = "question">
+                    <input id = "fname" type="text" name="fname" placeholder="First Name" required></br>
+                    <input id = "lname" type="text" name="lname" placeholder="Last Name" required></br>
+                    <input id = "email" type="text" name="email" placeholder="Truman Email" required></br>
+                    <input id = "major" type="text" name="major" placeholder="Major"></br>
+                  </div>
+                  <div class = "question">
+                    <label>What year are you?</label></br>
+                    <input id = "fr" type = "radio" name = "year" value = "Freshman" required><label>Freshman</label></br>
+                    <input id = "so" type = "radio" name = "year" value = "Sophomore" required><label>Sophomore</label></br>
+                    <input id = "jr" type = "radio" name = "year" value = "Junior" required><label>Junior</label></br>
+                    <input id = "sr" type = "radio" name = "year" value = "Senior" required><label>Senior</label></br>
+                  </div>
+                  <div class = "question">
+                    <label>What is your primary instrument?</label></br>
+                    <select name = "instrument">
+                      <option>None selected</option>
+                      <optgroup label = "Woodwinds">
+                        <option>Flute</option>
+                        <option>Clarinet</option>
+                        <option>Saxophone</option>
+                        <option>Oboe</option>
+                        <option>Bassoon</option>
+                        <option>English Horn</option>
+                      </optgroup>
+                      <optgroup label = "Brass">
+                        <option>Trumpet</option>
+                        <option>Trombone</option>
+                        <option>Tuba</option>
+                        <option>Euphonium</option>
+                        <option>French Horn</option>
+                      </optgroup>
+                      <optgroup label = "Strings">
+                        <option>Violin</option>
+                        <option>Viola</option>
+                        <option>Cello</option>
+                        <option>Bass</option>
+                      </optgroup>
+                      <optgroup label = "Other">
+                        <option>Piano</option>
+                        <option>Percussion</option>
+                        <option>Voice</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class = "question">
+                    <label>Which ensembles are you involved in?</label></br>
+                    <input id="Cantoria" type="checkbox" name="ensemble" value="Cantoria"> <label for="cantoria">Cantoria</label></br>
+                    <input id="Voci" type="checkbox" name="ensemble" value="Voci"> <label for="voci">Voci</label></br>
+                    <input id="Chorus" type="checkbox" name="ensemble" value="Chorus"> <label for="chorus">Chorus</label></br>
+                    <input id="Wind Symphony" type="checkbox" name="ensemble" value="Wind Symphony"> <label for="wind symphony">Wind Symphony</label></br>
+                    <input id="Concert Band" type="checkbox" name="ensemble" value="Concert Band"> <label for="concert band">Concert Band</label></br>
+                    <input id="Orchestra" type="checkbox" name="ensemble" value="Orchestra"> <label for="orchestra">Orchestra</label></br>
+                    <input id="Marching Band" type="checkbox" name="ensemble" value="Marching Band"> <label for="marching band">Marching Band</label></br>
+                    <input id="Jazz Band" type="checkbox" name="ensemble" value="Jazz Band"> <label for="jazz band">Jazz Band</label></br>
+                  </div>
+                </fieldset>
+                <button id = "submit" type="submit">Submit</button>
+              </form>
+              <pre id="jsonOutput"></pre>
+        </div>
+    </body>
+</html>

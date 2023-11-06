@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    background-image: url('pics/roses.jpg');
+    background-size: cover; /* Adjust this as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh; /* Full viewport height, adjust as needed */
+    position: relative; /* Allows us to position the child elements */
+  }
+
+.container {
+    position: absolute;
+    top: 50px; /* Adjust the top position for the border */
+    right: 50px; /* Adjust the right position for the border */
+    bottom: 50px; /* Adjust the bottom position for the border */
+    left: 50px; /* Adjust the left position for the border */
+    background-color: beige; /* Set the beige color */
+}
+
+.question{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#jsonOutput {
+    background-color: lightgray;
+    border: 1px solid gray;
+}
