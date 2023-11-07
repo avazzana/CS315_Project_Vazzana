@@ -2,19 +2,22 @@ body {
     font-family: sans-serif;
     background-image: url('pics/roses.jpg');
     background-size: cover; /* Adjust this as needed */
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center center;
-    height: 100vh; /* Full viewport height, adjust as needed */
-    position: relative; /* Allows us to position the child elements */
+    height: 100vh; 
   }
 
+h1, h2, p{
+    padding: 30 px;
+}
+
 .container {
-    position: absolute;
-    top: 50px; /* Adjust the top position for the border */
-    right: 50px; /* Adjust the right position for the border */
-    bottom: 50px; /* Adjust the bottom position for the border */
-    left: 50px; /* Adjust the left position for the border */
+    position: relative;
+    margin: 30px auto;
     background-color: beige; /* Set the beige color */
+    padding: 30px;
+    height: auto;
+    width: 1200px;
 }
 
 .question{
@@ -22,7 +25,29 @@ body {
     margin-bottom: 20px;
 }
 
-#jsonOutput {
-    background-color: lightgray;
-    border: 1px solid gray;
+.mitevent{
+    padding: 20px;
+    overflow: hidden;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+table{
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+td{
+    border: solid 1px black;
+}
+
+img {
+    width: 300px;
+    height: auto;
 }
