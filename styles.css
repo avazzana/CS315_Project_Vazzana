@@ -48,6 +48,7 @@ td{
 }
 
 img {
+    display: block;
     width: 300px;
     height: auto;
 }
@@ -73,13 +74,33 @@ img {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 20px solid #333;
-    transform-origin: 50% 100%;
-    transition: transform 0.3s;
+    transform-origin: 50% 50%;
+    animation: none;
   }
   
+  .triangle.active {
+    animation: rotateTriangle 0.3s linear;
+  }
+
   .row-content {
     padding: 10px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s;
+    transition: max-height 2s;
+  }
+
+  figure {
+    padding: 10px;
+  }
+  
+  figcaption {
+    display: block;
+    font-style: italic;
+    color: #777;
+    font-size: 14px;
+  }
+
+  @keyframes rotateTriangle {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(180deg); }
   }
