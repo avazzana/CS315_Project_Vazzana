@@ -17,7 +17,7 @@ h1, h2, p{
     background-color: beige; 
     padding: 30px;
     height: auto;
-    width: 1200px;
+    width: 300px;
     display: flex;
 }
 
@@ -65,7 +65,7 @@ tr{
 
 img {
     display: block;
-    width: 300px;
+    width: 100px;
     height: auto;
 }
 
@@ -155,7 +155,7 @@ a:active {
 }
 
 .menu-panel {
-    width: 200px;
+    width: 100px;
     height: 100vh; 
     color: #000;
   }

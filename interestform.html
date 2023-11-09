@@ -3,10 +3,21 @@
     <head>
         <title>SAI Interest form</title>
         <link href="styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
         <script defer src = "script.js"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container clearfix">
+          <div class = "menu-panel">
+            <ul>
+              <li> <a href="welcome.html">Home</a></li>
+              <li> <a href="aboutsai.html">About SAI</a></li>
+              <li> <a href="faqs.html">FAQs</a></li>
+              <li> <a href="MITStuff.html">For MITS</a></li>
+              <li> <a href="interestform.html">Interest Form</a></li>
+              </ul>
+          </div>
+          <div class = "content">
             <h1 id = "formsection">Interested in joining SAI? Fill out the form below to receive emails about recruitment!</h1>
             <pre id="jsonOutput"></pre>
             <form id = "interestform">
@@ -70,6 +81,7 @@
                 </fieldset>
                 <button id = "submit" type="submit">Submit</button>
               </form>
+          </div>    
         </div>
     </body>
 </html>

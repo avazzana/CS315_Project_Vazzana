@@ -3,14 +3,47 @@
     <head>
         <title>Epsilon Pi Welcome</title>
         <link href="styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container clearfix">
+              <div class = "content">
             <h1>Welcome to the Epsilon Pi homepage!</h1>
-            <figure>
-                <img src = "pics/pledging.jpg" alt = "a group of women make various silly poses for a picture">
-                <figcaption>We would love for you to become a part of the chaos</figaption>
-            </figure>
+            <div class = "column">
+                <figure>
+                    <img src = "pics/pledging.jpg" alt = "a group of women make various silly poses for a picture">
+                    <figcaption>We would love for you to become a part of our chaos</figcaption>
+                </figure>
+            </div>
+            <div class = "column">
+                <table class = "table-no-borders">
+                    <tr>
+                        <td class = "td-no-borders">Click on the heart to learn more about us!</td>
+                        <td class = "td-no-borders"><a href = "aboutsai.html">
+                            <img src = "pics/hearticon.png" alt = "heart" class = "image-icon">
+                            </a></td>
+                    </tr>
+                    <tr>
+                        <td class = "td-no-borders">Click on the rose to learn more about how to become a member!</td>
+                        <td class = "td-no-borders"><a href = "MITStuff.html">
+                            <img src = "pics/roseicon2.png" alt = "rose" class = "image-icon">
+                            </a></td>
+                    </tr>
+                    <tr>
+                        <td class = "td-no-borders">Click on the question mark to view our FAQs!</td>
+                        <td class = "td-no-borders"><a href = "faqs.html">
+                            <img src = "pics/questionmark.jpg" alt = "question mark" class = "image-icon">
+                            </a></td>
+                    </tr>
+                    <tr>
+                        <td class = "td-no-borders">Click on the music note to note-ify us that you're interested &#40;That was a good one, wasn't it?&#41;</td>
+                        <td class = "td-no-borders"><a href = "interestform.html">
+                            <img src = "pics/musicnote.jpg" alt = "music note" class = "image-icon">
+                            </a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         </div>
     </body>
 </html>
