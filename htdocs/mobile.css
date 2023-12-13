@@ -1,0 +1,168 @@
+body {
+    font-family: sans-serif;
+    background-image: url('pics/roses.jpg');
+    background-size: cover; /* Adjust this as needed */
+    background-repeat: repeat-y;
+    background-position: center center;
+    height: 100vh; 
+  }
+
+h1, h2, p{
+    padding: 30 px;
+}
+
+.container {
+    position: relative;
+    margin: 30px auto;
+    background-color: beige; 
+    padding: 30px;
+    height: auto;
+    width: 300px;
+    display: flex;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.question{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.mitevent{
+    padding: 20px;
+    overflow: hidden;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+table{
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin: 20px;
+    padding: 20px;
+}
+
+td{
+    border: solid 1px black;
+}
+
+th{
+    border: solid 1px black;
+}
+
+tr{
+    padding: 10px;
+}
+
+img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+
+.row {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .row-header {
+    background-color: #e10e0e;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #333;
+    transform-origin: 50% 50%;
+    animation: none;
+  }
+  
+  .triangle.active {
+    animation: rotateTriangle 0.3s linear;
+  }
+
+  .row-content {
+    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s;
+  }
+
+  figure {
+    padding: 10px;
+  }
+  
+  figcaption {
+    display: block;
+    font-style: italic;
+    color: #777;
+    font-size: 14px;
+  }
+
+  .image-icon{
+    width: 50px;
+    height: 50px;
+  }
+
+  .table-no-borders{
+    margin: 20px;
+    border: none;
+  }
+
+  .td-no-borders{
+    border: none;
+    padding: 10px;
+  }
+
+
+  @keyframes rotateTriangle {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(180deg); }
+  }
+
+
+a {
+    color: blue;
+}  
+
+a:visited {
+    color: purple; 
+}
+
+a:hover {
+    color: red; 
+}
+
+a:active {
+    color: green;
+}
+
+.menu-panel {
+    width: 100px;
+    height: 100vh; 
+    color: #000;
+  }
+
+.content{
+    flex: 1;
+    padding: 20px;
+}
+
+ 
