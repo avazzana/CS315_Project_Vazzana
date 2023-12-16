@@ -54,26 +54,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = mysqli_real_escape_string($conn, $username);
     $password = mysqli_real_escape_string($conn, $password);
 
-    // Query to check if the user exists with the given credentials
-    $sql = "SELECT * FROM member WHERE username='$username' AND password='$password'";
-    $result = $conn->query($sql);
+    if (strlen($username) < 1){
+        echo '<div class = "error-message"> Error: Please enter your username </div>';
+    }
+    else if (strlen($password) < 1){
+        echo '<div class = "error-message"> Error: Please enter your password </div>';
+    }
+    else {
+        // Query to check if the user exists with the given credentials
+        $sql = "SELECT * FROM member WHERE username='$username' AND password='$password'";
+        $result = $conn->query($sql);
 
-    if ($result->num_rows == 1) {
-       
-            echo "you at least did login right";
-            header("Location: store.php"); // Redirect to dashboard or authenticated page
+        if ($result->num_rows == 1) {
+            header("Location: index.php"); 
+            session_start();
+            $cookie_name = "user";
+            $cookie_value = $username;
+            setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+            $_SESSION["username"] = $username;
             exit();
         
-            
-        // Redirect to a dashboard or another page
-        // header("Location: dashboard.php");
-    } else {
-        // Invalid credentials
-        while($row = $result->fetch_assoc()) {
-            echo "Column1: " . $row["column1_name"]. " - Column2: " . $row["column2_name"]. "<br>";
-            // You can display other columns as needed
+        } else {
+            echo '<div class = "error-message"> Error: Invalid username or password </div>';
         }
-        echo "Invalid username or password";
     }
 
 }
