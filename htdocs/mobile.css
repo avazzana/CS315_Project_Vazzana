@@ -9,6 +9,7 @@ body {
 
 h1, h2, p{
     padding: 30 px;
+    display: block;
 }
 
 .container {
@@ -165,4 +166,7 @@ a:active {
     padding: 20px;
 }
 
+form{
+  display: block;
+}
  

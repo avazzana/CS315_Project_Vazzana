@@ -9,6 +9,16 @@ body {
 
 h1, h2, p{
     padding: 30 px;
+    display: block;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+.error-message{
+    color: red;
+    border: 1px solid red;
 }
 
 .container {
@@ -165,4 +175,6 @@ a:active {
     padding: 20px;
 }
 
- 
+form{
+    display: block;
+}
